@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container, .list-container {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3061E3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #21439e;
+}
+
+#productList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo dos itens da lista */
+#product-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Texto do produto */
+.product-info {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+/* Mensagem de sem estoque */
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+/* Centralizar o texto do nome e do estoque */
+li > span {
+    flex: 1;
+    text-align: left; 
+}
+
+/* Botões de Entrada e Saída */
+.btn {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Agrupamento dos botões */
+.button-group {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+/* Botão de entrada (verde) */
+.btn-entry {
+    background-color: #28a745;
+    color: white;
+    width: 70px; /* Largura */
+    height: 35px; /* Altura */
+}
+
+.btn-entry:hover {
+    background-color: #218838;
+}
+
+/* Botão de saída (vermelho) */
+.btn-exit {
+    background-color: #dc3545;
+    color: white;
+    width: 70px; /* Largura */
+    height: 35px; /* Altura */
+}
+
+.btn-exit:hover {
+    background-color: #c82333;
+}
+
+/* Botão de exclusão */
+.btn-delete {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-delete img {
+    width: 15px;
+    height: 15px;
+}
+
+.btn-delete:hover img {
+    filter: brightness(0.8);
+}

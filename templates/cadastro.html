@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro - Gerenciador de Estoques</title>
+        <link rel="stylesheet" href="../static/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cadastro de Usuário</h1>
+            <div class="form-container">
+                <form id="signupForm" method="POST" action="/cadastro">
+                    <input id="signupUsername" name="signupUsername" type="text" placeholder="Nome de Usuário" required />
+                    <input id="signupPassword" name="signupPassword" type="password" placeholder="Senha" required />
+                    <input id="signupConfirmPassword" name="signupConfirmPassword" type="password" placeholder="Confirmar Senha" required />
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <p>Já possui uma conta? <a href="/">Login aqui</a></p>
+        </div>
+        <script src="../static/login.js"></script>
+    </body>
+</html>

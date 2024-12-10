@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Gerenciador de Estoques</title>
+        <link rel="stylesheet" href="../static/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <div class="form-container">
+                <form id="loginForm" method="POST" action="/login">
+                    <input id="loginUsername" name="loginUsername" type="text" placeholder="Nome de Usuário" required />
+                    <input id="loginPassword" name="loginPassword" type="password" placeholder="Senha" required />
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+            <p>Não tem uma conta? <a href="/cadastro">Cadastre-se aqui</a></p>
+        </div>
+        <div class="projects">
+            <h2>Veja meus outros projetos clicando neles:</h2>
+            <div class="project-links">
+                <a href="https://arthurfontes762.github.io/PokeAPI-PokemonTCG-Simple-Search-JavaScript-2024_11_05/" target="_blank">
+                    <img src="../static/Pokémon Database Search.png" alt="Pokémon Database Search" />
+                </a>
+                <a href="https://arthurfontes762.github.io/Sonic-Memory-Game-JavaScript-2024_08_29/" target="_blank">
+                    <img src="../static/Sonic Memory Game.png" alt="Sonic Memory Game" />
+                </a>
+            </div>
+        </div>
+        <script src="../static/scripts.js"></script>
+    </body>
+</html>
